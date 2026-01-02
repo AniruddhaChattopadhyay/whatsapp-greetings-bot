@@ -1,0 +1,49 @@
+{
+  "name": "greetings-bot-whatsapp",
+  "version": "1.0.0",
+  "description": "Open-source WhatsApp bot for sending personalized greeting messages to multiple contacts",
+  "main": "src/cli/index.js",
+  "type": "module",
+  "bin": {
+    "greetings-bot": "./src/cli/index.js"
+  },
+  "scripts": {
+    "start": "node src/cli/index.js",
+    "dev": "node --watch src/cli/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "greetings",
+    "bulk-messaging",
+    "automation",
+    "whatsapp-web"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.4.1",
+    "inquirer": "^9.2.0",
+    "node-cron": "^3.0.3",
+    "ora": "^8.0.1",
+    "qrcode-terminal": "^0.12.0",
+    "uuid": "^13.0.0",
+    "whatsapp-web.js": "^1.25.0",
+    "winston": "^3.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/greetings-bot-whatsapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/greetings-bot-whatsapp/issues"
+  }
+}

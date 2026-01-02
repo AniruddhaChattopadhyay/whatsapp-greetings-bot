@@ -1,0 +1,34 @@
+{
+  "whatsapp": {
+    "sessionPath": "./data/session",
+    "puppeteerOptions": {
+      "headless": true,
+      "args": ["--no-sandbox", "--disable-setuid-sandbox"]
+    }
+  },
+  "delays": {
+    "minDelay": 30000,
+    "maxDelay": 60000,
+    "randomize": true
+  },
+  "limits": {
+    "dailyLimit": 100,
+    "enabled": true,
+    "resetHour": 0
+  },
+  "retries": {
+    "maxAttempts": 3,
+    "backoffMultiplier": 2,
+    "enabled": true
+  },
+  "logging": {
+    "level": "info",
+    "file": "./data/logs/app.log",
+    "maxSize": "10m",
+    "maxFiles": 5
+  },
+  "data": {
+    "contactsFile": "./data/contacts.json",
+    "templatesFile": "./data/templates.json"
+  }
+}
